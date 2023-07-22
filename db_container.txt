@@ -1,0 +1,2 @@
+docker run --name dc_colis_odoo -e POSTGRES_PASSWORD=colisdb -p 5433:5432 -d postgres
+docker run --name dc_colis_op -e MYSQL_ROOT_PASSWORD=colisdb -p 3307:3306 -d mysql

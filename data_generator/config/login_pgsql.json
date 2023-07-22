@@ -1,0 +1,8 @@
+{
+  "drivername": "postgresql",
+  "username": "postgres",
+  "password": "colisdb",
+  "host": "localhost",
+  "port": "5433",
+  "database": "postgres"
+}

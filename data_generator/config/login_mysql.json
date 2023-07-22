@@ -1,0 +1,8 @@
+{
+  "drivername": "mysql",
+  "username": "root",
+  "password": "colisdb",
+  "host": "localhost",
+  "port": "3307",
+  "database": "colis_op"
+}

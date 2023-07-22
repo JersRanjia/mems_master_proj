@@ -1,0 +1,13 @@
+{% for table in tables %}
+# Generate file for {{ table.name }}
+from sqlalchemy import Column, Integer, String
+from sqlalchemy.ext.declarative import declarative_base
+
+Base = declarative_base()
+
+class {{ table.name|capitalize }}(Base):
+    __tablename__ = '{{ table.name }}'
+    {% for column in table.columns %}
+    {{ column.name }} = Column({{ column.type|capitalize }})
+    {% endfor %}
+{% endfor %}
